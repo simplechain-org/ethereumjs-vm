@@ -44,7 +44,7 @@
     "async-eventemitter": "^0.2.2",
     "ethereumjs-account": "^2.0.3",
     "ethereumjs-block": "~2.2.0",
-    "ethereumjs-blockchain": "^3.4.0",
+    "ethereumjs-blockchain": "^4.0.0",
     "ethereumjs-common": "^1.1.0",
     "ethereumjs-util": "^6.0.0",
     "fake-merkle-patricia-tree": "^1.0.1",
