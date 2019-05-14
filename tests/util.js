@@ -1,5 +1,5 @@
 const async = require('async')
-const utils = require('ethereumjs-util')
+const utils = require('simplechainjs-util')
 const BN = utils.BN
 const rlp = utils.rlp
 const Account = require('ethereumjs-account')

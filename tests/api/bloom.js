@@ -1,6 +1,6 @@
 const tape = require('tape')
 const Bloom = require('../../lib/bloom')
-const utils = require('ethereumjs-util')
+const utils = require('simplechainjs-util')
 
 const byteSize = 256
 

@@ -1,7 +1,7 @@
 const async = require('async')
 const testUtil = require('./util')
 const Trie = require('merkle-patricia-tree/secure')
-const ethUtil = require('ethereumjs-util')
+const ethUtil = require('simplechainjs-util')
 const Account = require('ethereumjs-account')
 const BN = ethUtil.BN
 const { getRequiredForkConfigAlias } = require('./util')
