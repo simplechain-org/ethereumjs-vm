@@ -1,7 +1,7 @@
 {
-  "name": "ethereumjs-vm",
+  "name": "simplechainjs-vm",
   "version": "3.0.0",
-  "description": "An Ethereum VM implementation",
+  "description": "An Simplechain VM implementation",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -21,7 +21,7 @@
     "testAPI:browser": "karma start karma.conf.js",
     "test": "echo \"[INFO] Generic test cmd not used. See package.json for more specific test run cmds.\"",
     "lint": "standard",
-    "prepublishOnly": "npm run lint && npm run build:dist && npm run testBuildIntegrity",
+    "prepublishOnly": "npm run lint && npm run build:dist",
     "build:dist": "babel lib/ -d dist/",
     "build:docs": "documentation build ./lib/index.js ./lib/runBlockchain.js ./lib/runBlock.js ./lib/runTx.js ./lib/runCode.js ./lib/runCall.js --format md --shallow > ./docs/index.md",
     "formatTest": "node ./scripts/formatTest"
@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethereumjs/ethereumjs-vm.git"
+    "url": "git+https://github.com/simplechain-org/ethereumjs-vm.git"
   },
   "keywords": [
-    "ethereum",
+    "simplechain",
     "VM"
   ],
   "dependencies": {
@@ -78,14 +78,8 @@
     "util.promisify": "^1.0.0"
   },
   "author": "mjbecze <mjbecze@gmail.com>",
-  "contributors": [
-    "Alex Beregszaszi <alex@rtfs.hu>"
-  ],
   "license": "MPL-2.0",
-  "bugs": {
-    "url": "https://github.com/ethereumjs/ethereumjs-vm/issues"
-  },
-  "homepage": "https://github.com/ethereumjs/ethereumjs-vm",
+  "homepage": "https://github.com/simplechain-org/ethereumjs-vm",
   "nyc": {
     "exclude": [
       "tests"
