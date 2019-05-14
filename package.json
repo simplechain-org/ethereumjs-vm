@@ -46,7 +46,7 @@
     "ethereumjs-block": "~2.2.0",
     "ethereumjs-blockchain": "^3.4.0",
     "ethereumjs-common": "^1.1.0",
-    "simplechainjs-util": "^6.1.0",
+    "simplechainjs-util": "^6.1.0-sipc",
     "fake-merkle-patricia-tree": "^1.0.1",
     "functional-red-black-tree": "^1.0.1",
     "merkle-patricia-tree": "^2.3.2",
