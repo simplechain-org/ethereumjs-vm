@@ -12,7 +12,7 @@ var Account = require('ethereumjs-account')
 var Transaction = require('ethereumjs-tx')
 var Trie = require('merkle-patricia-tree')
 var rlp = require('rlp')
-var utils = require('ethereumjs-util')
+var utils = require('simplechainjs-util')
 
 // creating a trie that just resides in memory
 var stateTrie = new Trie()

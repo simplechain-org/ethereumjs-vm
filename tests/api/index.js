@@ -1,6 +1,6 @@
 const { promisify } = require('util')
 const tape = require('tape')
-const util = require('ethereumjs-util')
+const util = require('simplechainjs-util')
 const Block = require('ethereumjs-block')
 const Trie = require('merkle-patricia-tree/secure')
 const VM = require('../../lib/index')

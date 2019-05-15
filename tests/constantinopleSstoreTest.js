@@ -4,7 +4,7 @@ const VM = require('../')
 const Account = require('ethereumjs-account')
 const testUtil = require('./util')
 const Trie = require('merkle-patricia-tree/secure')
-const ethUtil = require('ethereumjs-util')
+const ethUtil = require('simplechainjs-util')
 const BN = ethUtil.BN
 
 var testCases = [

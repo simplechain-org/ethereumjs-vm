@@ -1,6 +1,6 @@
 const { promisify } = require('util')
 const tape = require('tape')
-const util = require('ethereumjs-util')
+const util = require('simplechainjs-util')
 const StateManager = require('../../lib/stateManager')
 const { createAccount } = require('./utils')
 
