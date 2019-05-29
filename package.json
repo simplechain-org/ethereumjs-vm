@@ -1,6 +1,6 @@
 {
-  "name": "ethereumjs-vm",
-  "version": "3.0.0",
+  "name": "simplechainjs-vm",
+  "version": "3.0.0-sipc",
   "description": "An Ethereum VM implementation",
   "main": "dist/index.js",
   "files": [
@@ -21,7 +21,7 @@
     "testAPI:browser": "karma start karma.conf.js",
     "test": "echo \"[INFO] Generic test cmd not used. See package.json for more specific test run cmds.\"",
     "lint": "standard",
-    "prepublishOnly": "npm run lint && npm run build:dist && npm run testBuildIntegrity",
+    "prepublishOnly": "npm run lint && npm run build:dist",
     "build:dist": "babel lib/ -d dist/",
     "build:docs": "documentation build ./lib/index.js ./lib/runBlockchain.js ./lib/runBlock.js ./lib/runTx.js ./lib/runCode.js ./lib/runCall.js --format md --shallow > ./docs/index.md",
     "formatTest": "node ./scripts/formatTest"
@@ -46,7 +46,8 @@
     "functional-red-black-tree": "^1.0.1",
     "merkle-patricia-tree": "^2.3.2",
     "rustbn.js": "~0.2.0",
-    "safe-buffer": "^5.1.1"
+    "safe-buffer": "^5.1.1",
+    "simplechainjs-util": "^6.1.1-sipc"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
