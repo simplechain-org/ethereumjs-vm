@@ -1,6 +1,6 @@
 {
   "name": "simplechainjs-vm",
-  "version": "3.0.0",
+  "version": "v2.6.2-sipc",
   "description": "An Simplechain VM implementation",
   "main": "dist/index.js",
   "files": [
