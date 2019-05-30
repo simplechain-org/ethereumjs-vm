@@ -1,7 +1,7 @@
 {
-  "name": "ethereumjs-vm",
-  "version": "2.6.0",
-  "description": "An Ethereum VM implementation",
+  "name": "simplechainjs-vm",
+  "version": "v2.6.5-sipc",
+  "description": "An Simplechain VM implementation",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -39,7 +39,7 @@
     "ethereumjs-account": "^2.0.3",
     "ethereumjs-block": "~2.2.0",
     "ethereumjs-common": "^1.1.0",
-    "ethereumjs-util": "^6.0.0",
+    "simplechainjs-util": "^6.1.2-sipc",
     "fake-merkle-patricia-tree": "^1.0.1",
     "functional-red-black-tree": "^1.0.1",
     "merkle-patricia-tree": "^2.3.2",
