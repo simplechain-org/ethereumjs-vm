@@ -5,7 +5,7 @@ const data =
 
 nameOpCodes(Buffer.from(data, 'hex'))
 
-function nameOpCodes(raw) {
+function nameOpCodes (raw) {
   var pushData
 
   for (var i = 0; i < raw.length; i++) {
@@ -20,23 +20,23 @@ function nameOpCodes(raw) {
     }
 
     console.log(
-      pad(pc, roundLog(raw.length, 10)) + '  ' + curOpCode + ' ' + pushData.toString('hex'),
+      pad(pc, roundLog(raw.length, 10)) + '  ' + curOpCode + ' ' + pushData.toString('hex')
     )
 
     pushData = ''
   }
 }
 
-function pad(num, size) {
+function pad (num, size) {
   var s = num + ''
   while (s.length < size) s = '0' + s
   return s
 }
 
-function log(num, base) {
+function log (num, base) {
   return Math.log(num) / Math.log(base)
 }
 
-function roundLog(num, base) {
+function roundLog (num, base) {
   return Math.ceil(log(num, base))
 }
