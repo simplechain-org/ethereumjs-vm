@@ -1,14 +1,13 @@
 const BN = require('bn.js')
 const tape = require('tape')
 const Common = require('ethereumjs-common').default
-const util = require('ethereumjs-util')
-const VM = require('../../../../dist/index').default
+// const VM = require('../../../../dist/index').default
 const { getPrecompile } = require('../../../../dist/evm/precompiles')
 
 tape('Precompiles: ECMUL', (t) => {
   t.test('ECMUL', (st) => {
     const common = new Common('mainnet', 'petersburg')
-    let vm = new VM({ common: common })
+    // let vm = new VM({ common: common })
     let ECMUL = getPrecompile('0000000000000000000000000000000000000007')
 
     let result = ECMUL({

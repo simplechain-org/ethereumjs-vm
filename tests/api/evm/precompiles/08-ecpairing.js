@@ -1,14 +1,13 @@
 const BN = require('bn.js')
 const tape = require('tape')
 const Common = require('ethereumjs-common').default
-const util = require('ethereumjs-util')
-const VM = require('../../../../dist/index').default
+// const VM = require('../../../../dist/index').default
 const { getPrecompile } = require('../../../../dist/evm/precompiles')
 
 tape('Precompiles: ECPAIRING', (t) => {
   t.test('ECPAIRING', (st) => {
     const common = new Common('mainnet', 'petersburg')
-    let vm = new VM({ common: common })
+    // let vm = new VM({ common: common })
     let ECPAIRING = getPrecompile('0000000000000000000000000000000000000008')
 
     let result = ECPAIRING({

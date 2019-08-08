@@ -1,14 +1,14 @@
 const BN = require('bn.js')
 const tape = require('tape')
 const Common = require('ethereumjs-common').default
-const util = require('ethereumjs-util')
-const VM = require('../../../dist/index').default
+// const util = require('ethereumjs-util')
+// const VM = require('../../../dist/index').default
 const { getPrecompile } = require('../../../dist/evm/precompiles')
 
 tape('Istanbul: EIP-1108 tests', (t) => {
   t.test('ECADD', (st) => {
     const common = new Common('mainnet', 'istanbul')
-    let vm = new VM({ common: common })
+    // let vm = new VM({ common: common })
     let ECADD = getPrecompile('0000000000000000000000000000000000000006')
 
     let result = ECADD({
@@ -22,7 +22,7 @@ tape('Istanbul: EIP-1108 tests', (t) => {
 
   t.test('ECMUL', (st) => {
     const common = new Common('mainnet', 'istanbul')
-    let vm = new VM({ common: common })
+    // let vm = new VM({ common: common })
     let ECMUL = getPrecompile('0000000000000000000000000000000000000007')
 
     let result = ECMUL({
@@ -36,7 +36,7 @@ tape('Istanbul: EIP-1108 tests', (t) => {
 
   t.test('ECPAIRING', (st) => {
     const common = new Common('mainnet', 'istanbul')
-    let vm = new VM({ common: common })
+    // let vm = new VM({ common: common })
     let ECPAIRING = getPrecompile('0000000000000000000000000000000000000008')
 
     let result = ECPAIRING({
